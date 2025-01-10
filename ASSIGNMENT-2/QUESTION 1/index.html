@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Headings and Paragraphs</title>
+    <!-- Link to External Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Internal Styles */
+        #heading3 {
+            text-align: center;
+            font-weight: bold;
+        }
+        #heading4 {
+            text-align: right;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <!-- Inline Styled Headings -->
+    <h1 style="color: crimson; font-size: 3em;">This is an H1 Heading</h1>
+    <h2 style="color: teal; font-size: 2.5em;">This is an H2 Heading</h2>
+    
+    <!-- Internal Styled Headings -->
+    <h3 id="heading3">This is an H3 Heading</h3>
+    <h4 id="heading4">This is an H4 Heading</h4>
+    
+    <!-- External Styled Heading and Paragraph -->
+    <h5>This is an H5 Heading</h5>
+    <p class="text">This is a paragraph with styled text using an external stylesheet.</p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+
+
+**Internal CSS** and **Inline CSS** are two methods of applying styles to HTML elements. Here's a breakdown of each:
+
+---
+
+### **Internal CSS**
+- Defined within a `<style>` tag in the `<head>` section of an HTML document.
+- Used when you want to apply styles to an entire HTML document but still keep them separate from the HTML structure.
+- Useful for smaller websites or when styles are specific to a single page.
+
+#### Syntax:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal CSS Example</title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+        h1 {
+            color: navy;
+            text-align: center;
+        }
+        p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <p>This is an example of Internal CSS.</p>
+</body>
+</html>
+```
+
+**Advantages**:
+1. Styles are consolidated in one place for easier management.
+2. Useful for styling a single page without creating a separate stylesheet.
+
+**Disadvantages**:
+1. Not reusable across multiple HTML files.
+2. Can make the `<head>` section cluttered.
+
+---
+
+### **Inline CSS**
+- Defined directly within an HTML element's `style` attribute.
+- Used for applying unique styles to individual elements.
+- Useful for quick testing or when styles are highly specific and won't be reused.
+
+#### Syntax:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline CSS Example</title>
+</head>
+<body>
+    <h1 style="color: red; text-align: center;">Welcome</h1>
+    <p style="font-size: 20px; color: green;">This is an example of Inline CSS.</p>
+</body>
+</html>
+```
+
+**Advantages**:
+1. Easy and quick to apply to individual elements.
+2. Requires no external or internal stylesheet.
+
+**Disadvantages**:
+1. Hard to maintain as the styles are scattered throughout the HTML file.
+2. Not reusable, leading to potential redundancy.
+3. Results in messy and cluttered code if overused.
+
+---
+
+### Key Differences:
+| Aspect             | Internal CSS                   | Inline CSS                |
+|---------------------|-------------------------------|---------------------------|
+| **Location**        | Inside a `<style>` tag in `<head>`. | Inside the `style` attribute of elements. |
+| **Scope**           | Applies to the entire document/page. | Applies to a single element. |
+| **Reusability**     | Can be reused across elements on the same page. | Not reusable. |
+| **Code Cleanliness**| Cleaner than inline CSS.      | Can make HTML cluttered.  |
+
+For larger projects, it's often recommended to use **external stylesheets** to separate content and design for better scalability and maintainability.
+
+-->

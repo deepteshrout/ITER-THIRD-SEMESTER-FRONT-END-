@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nested Dropdown Menu</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- jQuery and Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <style>
+    /* Custom CSS for handling the position of nested dropdown */
+    .dropdown-submenu {
+      position: relative;
+    }
+
+    .dropdown-submenu>.dropdown-menu {
+      top: 0;
+      left: 100%;
+      margin-top: -5px;
+      margin-left: 1px;
+      border-radius: 0.25rem;
+    }
+
+    /* Ensure that the dropdown menus stay visible when hovering */
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-submenu:hover>.dropdown-menu {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container mt-4">
+    <h2>Nested Dropdown Menu Example</h2>
+
+    <!-- Button Group for Categories -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Category 1
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Subcategory 1</a>
+        <a class="dropdown-item" href="#">Subcategory 2</a>
+        <a class="dropdown-item" href="#">Subcategory 3</a>
+        <a class="dropdown-item" href="#">Subcategory 4</a>
+        <!-- Nested Subcategory Dropdown -->
+        <div class="dropdown-submenu">
+          <a class="dropdown-item dropdown-toggle" href="#">Subcategory 5</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Option 1</a>
+            <a class="dropdown-item" href="#">Option 2</a>
+            <a class="dropdown-item" href="#">Option 3</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="btn-group ml-2">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Category 2</button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Subcategory 1</a>
+        <a class="dropdown-item" href="#">Subcategory 2</a>
+        <a class="dropdown-item" href="#">Subcategory 3</a>
+        <a class="dropdown-item" href="#">Subcategory 4</a>
+        <!-- Nested Subcategory Dropdown -->
+        <div class="dropdown-submenu">
+          <a class="dropdown-item dropdown-toggle" href="#">Subcategory 5</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Option 1</a>
+            <a class="dropdown-item" href="#">Option 2</a>
+            <a class="dropdown-item" href="#">Option 3</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="btn-group ml-2">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Category 3
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Subcategory 1</a>
+        <a class="dropdown-item" href="#">Subcategory 2</a>
+        <a class="dropdown-item" href="#">Subcategory 3</a>
+        <a class="dropdown-item" href="#">Subcategory 4</a>
+        <!-- Nested Subcategory Dropdown -->
+        <div class="dropdown-submenu">
+          <a class="dropdown-item dropdown-toggle" href="#">Subcategory 5</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Option 1</a>
+            <a class="dropdown-item" href="#">Option 2</a>
+            <a class="dropdown-item" href="#">Option 3</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="btn-group ml-2">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Category 4
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Subcategory 1</a>
+        <a class="dropdown-item" href="#">Subcategory 2</a>
+        <a class="dropdown-item" href="#">Subcategory 3</a>
+        <a class="dropdown-item" href="#">Subcategory 4</a>
+        <!-- Nested Subcategory Dropdown -->
+        <div class="dropdown-submenu">
+          <a class="dropdown-item dropdown-toggle" href="#">Subcategory 5</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Option 1</a>
+            <a class="dropdown-item" href="#">Option 2</a>
+            <a class="dropdown-item" href="#">Option 3</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

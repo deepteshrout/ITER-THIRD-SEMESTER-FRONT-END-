@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jQuery Mouse Hover</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <style>
+        .dropdown {
+            position: relative;
+            margin: 50px;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            padding: 12px;
+            min-width: 200px;
+        }
+        .dropdown-content p {
+            margin: 8px 0;
+            padding: 8px;
+        }
+        .dropdown-content p:hover {
+            background-color: #9b1313;
+        }
+    </style>
+</head>
+<body>
+    <span class="dropdown">
+        <span class="dropdown-trigger">Hover to see options</span>
+        <div class="dropdown-content">
+            <p>Option 1</p>
+            <p>Option 2</p>
+            <p>Option 3</p>
+            <p>Option 4</p>
+        </div>
+    </span>
+
+    <script>
+        $(document).ready(function () {
+            $(".dropdown").hover(
+                function () {
+                    $(".dropdown-content").fadeIn(2000); 
+                },
+                function () {
+                    $(".dropdown-content").fadeOut(2000); 
+                }
+            );
+        });
+    </script>
+</body>
+</html>
